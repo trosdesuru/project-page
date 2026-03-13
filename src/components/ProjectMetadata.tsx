@@ -11,12 +11,12 @@ export default function ProjectMetadata({
   className,
 }: MetadataProps) {
   const metaItems = [
-    { label: 'Role', value: metadata.role },
-    { label: 'Timeline', value: metadata.timeline },
-    { label: 'Platform', value: metadata.platform },
-    { label: 'Team', value: metadata.team },
-    { label: 'Users', value: metadata.users },
-    { label: 'Constraints', value: metadata.constraints },
+    { label: 'Rol', value: metadata.role },
+    { label: 'Duración', value: metadata.timeline },
+    { label: 'Plataforma', value: metadata.platform },
+    { label: 'Equipo', value: metadata.team },
+    { label: 'Usuarios', value: metadata.users },
+    { label: 'Limitaciones', value: metadata.constraints },
   ];
 
   return (

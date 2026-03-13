@@ -11,7 +11,7 @@ export default function ProjectIterative({ data, className }: IterativeProps) {
   return (
     <section className={cn('flex flex-col gap-6 py-10', className)}>
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">Iterative process</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Proceso iterativo</h2>
         <h3 className="mt-2 text-xl font-medium text-gray-600">
           {data.subtitle}
         </h3>
@@ -19,7 +19,7 @@ export default function ProjectIterative({ data, className }: IterativeProps) {
 
       <div className="mt-4">
         <h4 className="text-lg font-semibold text-gray-900">
-          High-fidelity prototype
+          Prototipo de alta fidelidad
         </h4>
         <ul className="mt-3 flex flex-col gap-2 pl-5">
           {data.highFidelity.map((item, index) => (
@@ -30,30 +30,30 @@ export default function ProjectIterative({ data, className }: IterativeProps) {
         </ul>
       </div>
 
-      {/* Bloque de Imagen con Next.js Image */}
       {data.image && (
-        <figure className="my-8 flex flex-col items-center gap-3">
-          <div className="relative aspect-video w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-100">
-            {/* Nota: Asegúrate de configurar dominios en next.config.ts si usas URLs externas */}
+        <figure className="my-10 flex flex-col items-center gap-4">
+          <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
             <Image
               src={data.image.src}
               alt={data.image.alt}
-              fill
-              className="object-cover"
+              width={1200}
+              height={800}
+              quality={90}
+              className="h-auto w-full object-contain"
               sizes="(max-width: 768px) 100vw, 800px"
             />
           </div>
           {data.image.caption && (
-            <figcaption className="text-sm text-gray-500">
+            <figcaption className="text-sm font-medium text-gray-500">
               {data.image.caption}
             </figcaption>
           )}
         </figure>
       )}
 
-      <div>
+      <div className="mt-4">
         <h4 className="text-lg font-semibold text-gray-900">
-          Testing and validation
+          Pruebas y validación
         </h4>
         <ul className="mt-3 flex flex-col gap-2 pl-5">
           {data.testing.map((item, index) => (

@@ -27,7 +27,7 @@ export default function ProjectDefinition({
 
       <div className="mt-4">
         <h4 className="text-lg font-semibold text-gray-900">
-          MVP scope (what we prioritised)
+          Alcance del MVP
         </h4>
         <ul className="mt-3 flex flex-col gap-2 pl-5">
           {data.scope.map((item, index) => (

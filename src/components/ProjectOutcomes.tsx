@@ -10,9 +10,9 @@ export default function ProjectOutcomes({
   className,
 }: OutcomesProps) {
   const outcomesList = [
-    { category: 'Business outcome', data: outcomes.business },
-    { category: 'Users outcome', data: outcomes.users },
-    { category: 'Team outcome', data: outcomes.team },
+    { category: 'Impacto en negocio', data: outcomes.business },
+    { category: 'Impacto en usuarios', data: outcomes.users },
+    { category: 'Impacto en el equipo', data: outcomes.team },
   ];
 
   return (

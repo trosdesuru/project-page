@@ -1,3 +1,9 @@
+export interface SectionImage {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface Outcome {
   title: string;
   description: string;
@@ -8,6 +14,7 @@ export interface ProblemSection {
   context: string[];
   challenge: string;
   successCriteria: string[];
+  image?: SectionImage;
 }
 
 export interface ResearchStep {
@@ -19,12 +26,14 @@ export interface ResearchStep {
 export interface ResearchSection {
   subtitle: string;
   steps: ResearchStep[];
+  image?: SectionImage;
 }
 
 export interface DefinitionSection {
   subtitle: string;
   context: string[];
   scope: string[];
+  image?: SectionImage;
 }
 
 export interface CaseStudyProps {
@@ -32,6 +41,7 @@ export interface CaseStudyProps {
   title: string;
   shortDescription: string;
   tags: string[];
+  heroImage?: SectionImage;
   metadata: {
     role: string;
     timeline: string;
@@ -54,6 +64,7 @@ export interface CaseStudyProps {
   delivery: DeliverySection;
   detailedOutcomes: DetailedOutcomesSection;
   learnings: LearningsSection;
+  image?: SectionImage;
 }
 
 export interface IterativeProcessSection {
@@ -71,11 +82,13 @@ export interface DeliverySection {
   subtitle: string;
   delivered: string[];
   improvements: string[];
+  image?: SectionImage;
 }
 
 export interface DetailedOutcome {
   title: string;
   description: string;
+  image?: SectionImage;
 }
 
 export interface DetailedOutcomesSection {
@@ -88,9 +101,11 @@ export interface DetailedOutcomesSection {
 export interface LearningItem {
   title: string;
   description: string;
+  image?: SectionImage;
 }
 
 export interface LearningsSection {
   subtitle: string;
   items: LearningItem[];
+  image?: SectionImage;
 }

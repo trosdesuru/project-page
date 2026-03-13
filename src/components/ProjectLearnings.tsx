@@ -11,7 +11,7 @@ export default function ProjectLearnings({
   return (
     <section className={cn('flex flex-col gap-6 py-10', className)}>
       <div>
-        <h2 className="text-2xl font-bold text-gray-900">Learnings</h2>
+        <h2 className="text-2xl font-bold text-gray-900">Aprendizajes</h2>
         <h3 className="mt-2 text-xl font-medium text-gray-600">
           {data.subtitle}
         </h3>
