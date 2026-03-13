@@ -9,9 +9,6 @@ export default function Navbar() {
         className="group flex items-center gap-2 text-xl font-bold text-gray-900 transition-colors hover:text-gray-600"
         aria-label="Ir a la página principal"
       >
-        <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gray-900 text-white transition-transform group-hover:scale-105">
-          <span className="text-sm leading-none font-bold">AB</span>
-        </div>
         <span className="hidden sm:inline-block">Eduard Hernández</span>
       </Link>
 
@@ -40,7 +37,7 @@ export default function Navbar() {
         />
 
         <Link
-          href="https://eduardhernandez-portfolio.vercel.app/"
+          href="https://eduardhernandez-portfolio.vercel.app/projects"
           className="flex items-center gap-2 rounded-full bg-gray-900 px-5 py-2.5 text-sm font-medium text-white transition-all hover:scale-105 hover:bg-gray-800 focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:outline-none"
         >
           <span className="hidden sm:inline-block">Volver</span>

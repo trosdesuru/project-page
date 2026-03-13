@@ -9,12 +9,12 @@ export default function ProjectDefinition({
 }: DefinitionProps) {
   return (
     <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
-      <div className="flex max-w-3xl flex-col gap-3">
+      <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
-          {data.subtitle}
+          Definición
         </span>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-          Definición
+          {data.subtitle}
         </h2>
       </div>
 
@@ -48,7 +48,7 @@ export default function ProjectDefinition({
               <img
                 src={data.image.src}
                 alt={data.image.alt}
-                className="h-auto w-full object-contain"
+                className="h-auto w-max object-contain"
               />
             </figure>
           )}

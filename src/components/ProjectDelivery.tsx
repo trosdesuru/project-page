@@ -6,16 +6,16 @@ type DeliveryProps = { data: DeliverySection; className?: string };
 export default function ProjectDelivery({ data, className }: DeliveryProps) {
   return (
     <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
-      <div className="flex max-w-3xl flex-col gap-3">
+      <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
-          {data.subtitle}
+          Entrega
         </span>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-          Entrega
+          {data.subtitle}
         </h2>
       </div>
 
-      <div className="flex flex-col gap-8 lg:w-3/4">
+      <div className="flex w-full flex-col gap-8">
         <div>
           <h4 className="text-xl font-semibold text-gray-900">Qué entregué</h4>
           <ul className="mt-3 ml-5 flex flex-col gap-2">

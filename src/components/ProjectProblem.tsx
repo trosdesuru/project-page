@@ -8,15 +8,14 @@ export default function ProjectProblem({ data, className }: ProblemProps) {
     <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
       <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
-          {data.subtitle}
+          Problema
         </span>
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
-          Problema
+          {data.subtitle}
         </h2>
       </div>
 
-      {/* TEXTO */}
-      <div className="flex flex-col gap-8 lg:w-3/4">
+      <div className="flex w-full flex-col gap-8">
         <div className="flex flex-col gap-4 text-lg leading-relaxed text-gray-700">
           {data.context.map((paragraph, index) => (
             <p key={index}>{paragraph}</p>

@@ -109,7 +109,7 @@ export const projectData: CaseStudyProps = {
       },
     ],
     image: {
-      src: '/images/group-mac-iphone.png',
+      src: '/images/research-square.png',
       alt: 'Mapeo de experiencia de usuario',
       caption:
         'Mapeando el recorrido del oyente desde el descubrimiento hasta la fidelización',
@@ -128,12 +128,12 @@ export const projectData: CaseStudyProps = {
       'Fundación accesible: Wireframes diseñados estrictamente bajo criterios de Web Accessibility (contraste de color, jerarquía semántica).',
     ],
     image: {
-      src: '/images/group-mac-iphone.png',
+      src: '/images/research-square.png',
       alt: 'Wireframes y requisitos técnicos',
       caption: 'Definiendo componentes escalables listos para React',
     },
     bottomImage: {
-      src: '/images/group-mac-iphone.png',
+      src: '/images/',
       alt: 'Detalle UI cuadrado',
     },
   },
@@ -145,7 +145,7 @@ export const projectData: CaseStudyProps = {
       'Selección de una paleta de colores y tipografías que evitasen la fatiga visual, transmitiendo la honestidad y transparencia que caracterizan al podcast.',
     ],
     image: {
-      src: '/images/group-mac-iphone.png',
+      src: '/images/frame-group.png',
       alt: 'Prototipos de alta fidelidad del proyecto',
       caption:
         'Evolución visual: De wireframes a una interfaz que transmite calma',
