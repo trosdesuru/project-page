@@ -1,68 +1,62 @@
-import Image from 'next/image';
 import { cn } from '@/lib/utils';
 import { IterativeProcessSection } from '@/lib/types';
 
-type IterativeProps = {
-  data: IterativeProcessSection;
-  className?: string;
-};
+type IterativeProps = { data: IterativeProcessSection; className?: string };
 
 export default function ProjectIterative({ data, className }: IterativeProps) {
   return (
-    <section className={cn('flex flex-col gap-6 py-10', className)}>
-      <div>
-        <h2 className="text-2xl font-bold text-gray-900">Proceso iterativo</h2>
-        <h3 className="mt-2 text-xl font-medium text-gray-600">
+    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+      <div className="flex max-w-3xl flex-col gap-3">
+        <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           {data.subtitle}
-        </h3>
+        </span>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+          Proceso iterativo
+        </h2>
       </div>
 
-      <div className="mt-4">
-        <h4 className="text-lg font-semibold text-gray-900">
-          Prototipo de alta fidelidad
-        </h4>
-        <ul className="mt-3 flex flex-col gap-2 pl-5">
-          {data.highFidelity.map((item, index) => (
-            <li key={index} className="list-disc text-base text-gray-700">
-              {item}
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col gap-8 lg:w-3/4">
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900">
+            Prototipo de alta fidelidad
+          </h4>
+          <ul className="mt-3 ml-5 flex flex-col gap-2">
+            {data.highFidelity.map((item, index) => (
+              <li
+                key={index}
+                className="list-disc text-base leading-relaxed text-gray-700"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900">
+            Pruebas y validación
+          </h4>
+          <ul className="mt-3 ml-5 flex flex-col gap-2">
+            {data.testing.map((item, index) => (
+              <li
+                key={index}
+                className="list-disc text-base leading-relaxed text-gray-700"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
       {data.image && (
-        <figure className="my-10 flex flex-col items-center gap-4">
-          <div className="w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
-            <Image
-              src={data.image.src}
-              alt={data.image.alt}
-              width={1200}
-              height={800}
-              quality={90}
-              className="h-auto w-full object-contain"
-              sizes="(max-width: 768px) 100vw, 800px"
-            />
-          </div>
-          {data.image.caption && (
-            <figcaption className="text-sm font-medium text-gray-500">
-              {data.image.caption}
-            </figcaption>
-          )}
+        <figure className="mt-4 aspect-video w-full overflow-hidden">
+          <img
+            src={data.image.src}
+            alt={data.image.alt}
+            className="h-full w-full object-contain"
+          />
         </figure>
       )}
-
-      <div className="mt-4">
-        <h4 className="text-lg font-semibold text-gray-900">
-          Pruebas y validación
-        </h4>
-        <ul className="mt-3 flex flex-col gap-2 pl-5">
-          {data.testing.map((item, index) => (
-            <li key={index} className="list-disc text-base text-gray-700">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
     </section>
   );
 }

@@ -132,6 +132,10 @@ export const projectData: CaseStudyProps = {
       alt: 'Wireframes y requisitos técnicos',
       caption: 'Definiendo componentes escalables listos para React',
     },
+    bottomImage: {
+      src: '/images/group-mac-iphone.png',
+      alt: 'Detalle UI cuadrado',
+    },
   },
 
   iterativeProcess: {

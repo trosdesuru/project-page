@@ -9,24 +9,38 @@ export default function ProjectLearnings({
   className?: string;
 }) {
   return (
-    <section className={cn('flex flex-col gap-6 py-10', className)}>
-      <div>
-        <h2 className="text-2xl font-bold text-gray-900">Aprendizajes</h2>
-        <h3 className="mt-2 text-xl font-medium text-gray-600">
+    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+      <div className="flex max-w-3xl flex-col gap-3">
+        <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           {data.subtitle}
-        </h3>
+        </span>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+          Aprendizajes
+        </h2>
       </div>
 
-      <div className="mt-4 flex flex-col gap-6">
+      <div className="flex flex-col gap-8 lg:w-3/4">
         {data.items.map((item, index) => (
           <div key={index}>
-            <h4 className="text-lg font-semibold text-gray-900">
+            <h4 className="text-xl font-semibold text-gray-900">
               {item.title}
             </h4>
-            <p className="mt-1 text-base text-gray-700">{item.description}</p>
+            <p className="mt-2 text-base leading-relaxed text-gray-700">
+              {item.description}
+            </p>
           </div>
         ))}
       </div>
+
+      {data.image && (
+        <figure className="mt-4 aspect-video w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+          <img
+            src={data.image.src}
+            alt={data.image.alt}
+            className="h-full w-full object-cover"
+          />
+        </figure>
+      )}
     </section>
   );
 }

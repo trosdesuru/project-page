@@ -33,7 +33,8 @@ export interface DefinitionSection {
   subtitle: string;
   context: string[];
   scope: string[];
-  image?: SectionImage;
+  image:SectionImage;
+  bottomImage?: SectionImage;
 }
 
 export interface CaseStudyProps {
@@ -96,6 +97,7 @@ export interface DetailedOutcomesSection {
   business: DetailedOutcome;
   user: DetailedOutcome;
   team: DetailedOutcome;
+  image?: SectionImage;
 }
 
 export interface LearningItem {

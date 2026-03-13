@@ -8,6 +8,7 @@ import ProjectIterative from '@/components/ProjectIterative';
 import ProjectDelivery from '@/components/ProjectDelivery';
 import ProjectDetailedOutcomes from '@/components/ProjectDetailedOutcomes';
 import ProjectLearnings from '@/components/ProjectLearnings';
+import FadeIn from '@/components/FadeIn';
 
 // Importamos nuestra data "limpia" como servicio
 import { projectData } from '@/data/projectData';
@@ -16,30 +17,57 @@ export default function Home() {
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
       <article className="flex flex-col gap-10">
-        <CaseStudyHeader
-          client={projectData.client}
-          title={projectData.title}
-          shortDescription={projectData.shortDescription}
-          tags={projectData.tags}
-          image={projectData.heroImage}
-        />
+        <FadeIn>
+          <CaseStudyHeader
+            client={projectData.client}
+            title={projectData.title}
+            shortDescription={projectData.shortDescription}
+            tags={projectData.tags}
+            image={projectData.heroImage}
+          />
+        </FadeIn>
 
-        <ProjectMetadata
-          metadata={projectData.metadata}
-          introduction={projectData.introduction}
-        />
+        <FadeIn delay={0.5}>
+          <ProjectMetadata
+            metadata={projectData.metadata}
+            introduction={projectData.introduction}
+          />
+        </FadeIn>
 
-        <ProjectOutcomes outcomes={projectData.outcomes} />
+        <FadeIn delay={0.6}>
+          <ProjectOutcomes outcomes={projectData.outcomes} />
+        </FadeIn>
 
-        <hr className="my-4 border-gray-200" />
+        <FadeIn>
+          <hr className="my-4 border-gray-200" />
+        </FadeIn>
 
-        <ProjectProblem data={projectData.problem} />
-        <ProjectResearch data={projectData.research} />
-        <ProjectDefinition data={projectData.definition} />
-        <ProjectIterative data={projectData.iterativeProcess} />
-        <ProjectDelivery data={projectData.delivery} />
-        <ProjectDetailedOutcomes data={projectData.detailedOutcomes} />
-        <ProjectLearnings data={projectData.learnings} />
+        <FadeIn>
+          <ProjectProblem data={projectData.problem} />
+        </FadeIn>
+        <FadeIn>
+          <ProjectResearch data={projectData.research} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectDefinition data={projectData.definition} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectIterative data={projectData.iterativeProcess} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectDelivery data={projectData.delivery} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectDetailedOutcomes data={projectData.detailedOutcomes} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectLearnings data={projectData.learnings} />
+        </FadeIn>
       </article>
     </main>
   );

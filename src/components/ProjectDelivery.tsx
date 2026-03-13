@@ -1,46 +1,58 @@
 import { cn } from '@/lib/utils';
 import { DeliverySection } from '@/lib/types';
 
-type DeliveryProps = {
-  data: DeliverySection;
-  className?: string;
-};
+type DeliveryProps = { data: DeliverySection; className?: string };
 
 export default function ProjectDelivery({ data, className }: DeliveryProps) {
   return (
-    <section className={cn('flex flex-col gap-6 py-10', className)}>
-      <div>
-        <h2 className="text-2xl font-bold text-gray-900">Entrega</h2>
-        <h3 className="mt-2 text-xl font-medium text-gray-600">
+    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+      <div className="flex max-w-3xl flex-col gap-3">
+        <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           {data.subtitle}
-        </h3>
+        </span>
+        <h2 className="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+          Entrega
+        </h2>
       </div>
 
-      <div className="mt-4">
-        <h4 className="text-lg font-semibold text-gray-900">
-          Qué entregué
-        </h4>
-        <ul className="mt-3 flex flex-col gap-2 pl-5">
-          {data.delivered.map((item, index) => (
-            <li key={index} className="list-disc text-base text-gray-700">
-              {item}
-            </li>
-          ))}
-        </ul>
+      <div className="flex flex-col gap-8 lg:w-3/4">
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900">Qué entregué</h4>
+          <ul className="mt-3 ml-5 flex flex-col gap-2">
+            {data.delivered.map((item, index) => (
+              <li
+                key={index}
+                className="list-disc text-base leading-relaxed text-gray-700"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h4 className="text-xl font-semibold text-gray-900">Mejoras clave</h4>
+          <ul className="mt-3 ml-5 flex flex-col gap-2">
+            {data.improvements.map((item, index) => (
+              <li
+                key={index}
+                className="list-disc text-base leading-relaxed text-gray-700"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-      <div className="mt-4">
-        <h4 className="text-lg font-semibold text-gray-900">
-          Mejoras clave
-        </h4>
-        <ul className="mt-3 flex flex-col gap-2 pl-5">
-          {data.improvements.map((item, index) => (
-            <li key={index} className="list-disc text-base text-gray-700">
-              {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+      {data.image && (
+        <figure className="mt-4 aspect-video w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+          <img
+            src={data.image.src}
+            alt={data.image.alt}
+            className="h-full w-full object-cover"
+          />
+        </figure>
+      )}
     </section>
   );
 }
