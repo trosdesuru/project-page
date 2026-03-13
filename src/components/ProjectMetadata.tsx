@@ -20,21 +20,24 @@ export default function ProjectMetadata({
   ];
 
   return (
-    <section className={cn('py-8', className)}>
-      <div className="grid grid-cols-2 gap-y-6 md:grid-cols-3">
-        {metaItems.map((item) => (
-          <div key={item.label} className="flex flex-col">
-            <span className="text-sm font-semibold text-gray-900">
-              {item.label}
-            </span>
-            <span className="text-sm text-gray-600">{item.value}</span>
-          </div>
-        ))}
+    <section className={cn('flex flex-col gap-10 py-4', className)}>
+      <div className="rounded-2xl border border-gray-300 bg-gray-50 p-6 md:p-8">
+        <div className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-3">
+          {metaItems.map((item) => (
+            <div key={item.label} className="flex flex-col gap-1">
+              <span className="text-sm font-semibold text-gray-900">
+                {item.label}
+              </span>
+              <span className="text-sm leading-relaxed text-gray-600">
+                {item.value}
+              </span>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="mt-8">
-        <p className="text-base leading-relaxed text-gray-700">
-          {introduction}
-        </p>
+
+      <div className="lg:w-full">
+        <p className="text-lg leading-relaxed text-gray-700">{introduction}</p>
       </div>
     </section>
   );

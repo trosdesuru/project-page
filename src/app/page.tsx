@@ -10,12 +10,12 @@ import ProjectDetailedOutcomes from '@/components/ProjectDetailedOutcomes';
 import ProjectLearnings from '@/components/ProjectLearnings';
 import FadeIn from '@/components/FadeIn';
 
-// Importamos nuestra data "limpia" como servicio
 import { projectData } from '@/data/projectData';
+import ProjectCTA from '@/components/projectCTA';
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
+    <main className="mx-auto max-w-6xl px-4 py-4 sm:px-6 lg:px-8">
       <article className="flex flex-col gap-10">
         <FadeIn>
           <CaseStudyHeader
@@ -45,6 +45,7 @@ export default function Home() {
         <FadeIn>
           <ProjectProblem data={projectData.problem} />
         </FadeIn>
+
         <FadeIn>
           <ProjectResearch data={projectData.research} />
         </FadeIn>
@@ -67,6 +68,10 @@ export default function Home() {
 
         <FadeIn>
           <ProjectLearnings data={projectData.learnings} />
+        </FadeIn>
+
+        <FadeIn>
+          <ProjectCTA />
         </FadeIn>
       </article>
     </main>

@@ -24,7 +24,7 @@ export default function CaseStudyHeader({
         className,
       )}
     >
-      <div className="flex flex-col justify-center gap-6 lg:col-span-6 lg:py-6">
+      <div className="flex flex-col justify-center gap-6 lg:col-span-6 lg:py-4">
         <div className="flex flex-col gap-3">
           <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
             {client}

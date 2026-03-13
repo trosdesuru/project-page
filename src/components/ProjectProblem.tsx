@@ -1,11 +1,12 @@
 import { cn } from '@/lib/utils';
 import { ProblemSection } from '@/lib/types';
+import ProjectOutcomes from './ProjectOutcomes';
 
 type ProblemProps = { data: ProblemSection; className?: string };
 
 export default function ProjectProblem({ data, className }: ProblemProps) {
   return (
-    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+    <section className={cn('flex flex-col gap-10 py-4 lg:gap-14', className)}>
       <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           Problema

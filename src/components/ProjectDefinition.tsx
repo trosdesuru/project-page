@@ -8,7 +8,7 @@ export default function ProjectDefinition({
   className,
 }: DefinitionProps) {
   return (
-    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+    <section className={cn('flex flex-col gap-10 py-4 lg:gap-14', className)}>
       <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           Definición
@@ -44,7 +44,7 @@ export default function ProjectDefinition({
 
         <div className="lg:col-span-5">
           {data.image && (
-            <figure className="sticky top-24 overflow-hidden">
+            <figure className="sticky top-2 overflow-hidden">
               <img
                 src={data.image.src}
                 alt={data.image.alt}
@@ -55,7 +55,7 @@ export default function ProjectDefinition({
         </div>
       </div>
 
-      {data.bottomImage && (
+      {/* {data.bottomImage && (
         <figure className="mt-6 aspect-square w-full overflow-hidden sm:mx-auto sm:w-3/4">
           <img
             src={data.bottomImage.src}
@@ -63,7 +63,7 @@ export default function ProjectDefinition({
             className="relative h-full w-full object-contain"
           />
         </figure>
-      )}
+      )} */}
     </section>
   );
 }

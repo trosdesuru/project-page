@@ -5,7 +5,7 @@ type IterativeProps = { data: IterativeProcessSection; className?: string };
 
 export default function ProjectIterative({ data, className }: IterativeProps) {
   return (
-    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+    <section className={cn('flex flex-col gap-10 py-4 lg:gap-14', className)}>
       <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           Proceso iterativo
@@ -49,7 +49,7 @@ export default function ProjectIterative({ data, className }: IterativeProps) {
       </div>
 
       {data.image && (
-        <figure className="mt-4 aspect-video w-full overflow-hidden">
+        <figure className="w-full overflow-hidden">
           <img
             src={data.image.src}
             alt={data.image.alt}

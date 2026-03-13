@@ -61,7 +61,7 @@ export const projectData: CaseStudyProps = {
       'Hito 3: Lograr una conversión fluida de visitantes a suscriptores de la newsletter.',
     ],
     image: {
-      src: '/images/group-mac-iphone.png',
+      src: '/images/spotify.png',
       alt: 'Dispersión de plataformas vs plataforma centralizada',
       caption:
         'El reto: Unificar un ecosistema disperso en un solo santuario digital',
@@ -128,12 +128,12 @@ export const projectData: CaseStudyProps = {
       'Fundación accesible: Wireframes diseñados estrictamente bajo criterios de Web Accessibility (contraste de color, jerarquía semántica).',
     ],
     image: {
-      src: '/images/research-square.png',
+      src: '/images/wireframe-mac.png',
       alt: 'Wireframes y requisitos técnicos',
       caption: 'Definiendo componentes escalables listos para React',
     },
     bottomImage: {
-      src: '/images/',
+      src: '/images/wireframe-mac.png',
       alt: 'Detalle UI cuadrado',
     },
   },
@@ -168,6 +168,10 @@ export const projectData: CaseStudyProps = {
       'Control de la audiencia: Independencia parcial de terceros al canalizar el tráfico hacia una newsletter propia.',
       'Experiencia unificada: Los usuarios ya no saltan entre aplicaciones para encontrar libros o enlaces mencionados.',
     ],
+    image: {
+      src: '/images/design-system.png',
+      alt: 'design system image'
+    }
   },
 
   detailedOutcomes: {
@@ -188,6 +192,10 @@ export const projectData: CaseStudyProps = {
       description:
         'La dualidad técnica y de diseño permitió priorizar el backlog de forma realista. Las decisiones de producto se tomaron sabiendo el coste de implementación, evitando rediseños de última hora.',
     },
+    image: {
+      src: '/images/group-mac-iphone.png',
+      alt: 'hero image',
+    }
   },
 
   learnings: {

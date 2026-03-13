@@ -5,7 +5,7 @@ type DeliveryProps = { data: DeliverySection; className?: string };
 
 export default function ProjectDelivery({ data, className }: DeliveryProps) {
   return (
-    <section className={cn('flex flex-col gap-10 py-12 lg:gap-14', className)}>
+    <section className={cn('flex flex-col gap-10 py-4 lg:gap-14', className)}>
       <div className="flex max-w-6xl flex-col gap-3">
         <span className="text-sm font-bold tracking-widest text-gray-500 uppercase">
           Entrega
@@ -45,11 +45,11 @@ export default function ProjectDelivery({ data, className }: DeliveryProps) {
       </div>
 
       {data.image && (
-        <figure className="mt-4 aspect-video w-full overflow-hidden rounded-xl border border-gray-200 bg-gray-50 shadow-sm">
+        <figure className="w-full overflow-hidden rounded-xl border border-gray-200 shadow-sm">
           <img
             src={data.image.src}
             alt={data.image.alt}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-contain"
           />
         </figure>
       )}
