@@ -50,7 +50,7 @@ export default function Footer() {
               <div className="h-6 w-px bg-slate-700" aria-hidden="true" />
 
               <a
-                href="https://eduardhernandez-portfolio.vercel.app"
+                href="https://eduardhernandez-portfolio.vercel.app/projects"
                 className="group flex items-center gap-2 rounded-full  px-5 py-2.5 text-sm font-medium text-white transition-all focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-950 focus:outline-none"
               >
                 <span className="inline-block">Volver al CV</span>
