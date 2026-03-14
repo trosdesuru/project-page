@@ -18,17 +18,17 @@ export const projectData: CaseStudyProps = {
   },
 
   metadata: {
-    role: 'UX Engineer & Frontend Developer (end-to-end)',
-    timeline: '2 meses - 2024',
+    role: 'UX Engineer & Frontend Developer',
+    timeline: '2024',
     platform: 'Responsive Web App',
-    team: 'Miguel Ángel Fort (Creador del Podcast), UX Engineer (Yo)',
+    team: 'UX | UI Designer, Frontend Dev, CEO',
     users:
       'Profesionales, freelancers y personas interesadas en la salud mental, la gestión del estrés y la prevención del burnout.',
     constraints:
       'Necesidad de un gestor de contenidos ágil para actualizar episodios, presupuesto ajustado, optimización técnica para SEO.',
   },
   introduction:
-    '"Al Borde del Burnout" es un podcast que aborda la salud mental a través de conversaciones honestas sobre la gestión del estrés y el agotamiento laboral. El proyecto necesitaba evolucionar de ser solo un canal de audio en plataformas de terceros a tener un hogar digital propio. Mi responsabilidad abarcó todo el ciclo del producto: desde traducir las necesidades de la comunidad en requisitos técnicos viables, hasta el diseño de la interfaz y su desarrollo frontend completo.',
+    'Al Borde del Burnout es un podcast que aborda la salud mental a través de conversaciones honestas sobre la gestión del estrés y el agotamiento laboral. El proyecto necesitaba evolucionar de ser solo un canal de audio en plataformas de terceros a tener un hogar digital propio. Mi responsabilidad abarcó todo el ciclo del producto: desde traducir las necesidades de la comunidad en requisitos técnicos viables, hasta el diseño de la interfaz y su desarrollo frontend completo.',
 
   outcomes: {
     business: {
@@ -56,9 +56,9 @@ export const projectData: CaseStudyProps = {
     challenge:
       'Diseñar y desarrollar desde cero una plataforma web que transmitiera calma y claridad, estructurando un catálogo creciente de episodios y recursos sin abrumar visualmente a un usuario que busca reducir su nivel de estrés.',
     successCriteria: [
-      'Hito 1: Lanzamiento de una arquitectura de información clara que permitiera categorizar y reproducir episodios directamente en la web.',
-      'Hito 2: Alcanzar una puntuación de accesibilidad web superior al 95% en Lighthouse.',
-      'Hito 3: Lograr una conversión fluida de visitantes a suscriptores de la newsletter.',
+      'Lanzamiento de una arquitectura de información clara que permitiera categorizar y reproducir episodios directamente en la web.',
+      'Alcanzar una puntuación de accesibilidad web superior al 95% en Lighthouse.',
+      'Lograr una conversión fluida de visitantes a suscriptores de la newsletter.',
     ],
     image: {
       src: '/images/spotify.png',
@@ -90,12 +90,12 @@ export const projectData: CaseStudyProps = {
         id: '02',
         title: 'Feedback de usuarios y mercado',
         items: [
-          'Análisis del feedback de la audiencia en redes sociales para descubrir carencias (ej: necesidad de enlaces rápidos a libros recomendados en los episodios).',
+          'Análisis del feedback de la audiencia en redes sociales para descubrir carencias como por ejemplo, la necesidad de enlaces rápidos a libros recomendados en los episodio).',
         ],
       },
       {
         id: '03',
-        title: 'Mapeo de la experiencia (Experience mapping)',
+        title: 'Mapeo de la experiencia',
         items: [
           'Mapeo del recorrido del oyente: desde que descubre un clip en redes sociales y escucha el audio, hasta que busca la web para suscribirse.',
         ],
@@ -120,12 +120,12 @@ export const projectData: CaseStudyProps = {
     subtitle:
       'Acortando la brecha entre una UI calmada y requisitos técnicos robustos',
     context: [
-      'La transición de los wireframes a los requisitos técnicos fue directa; cada componente fue diseñado pensando en su inmediata implementación en React/TypeScript y HTML/CSS, asegurando un desarrollo veloz y sin sorpresas tecnológicas.',
+      'La transición de los wireframes a los requisitos técnicos fue directa; cada componente fue diseñado pensando en su inmediata implementación en Wordpress con HTML/CSS y algo de PHP, asegurando un desarrollo veloz y sin sorpresas tecnológicas.',
     ],
     scope: [
-      'Navegación anti-burnout: Uso extensivo del espacio en blanco (whitespace) y reducción al mínimo de elementos distractores o pop-ups agresivos.',
+      'Navegación anti-burnout: Uso extensivo del espacio en blanco y reducción al mínimo de elementos distractores o pop-ups agresivos.',
       'Reproductor integrado: Funcionalidad para escuchar episodios en la misma página mientras se leen las show notes.',
-      'Fundación accesible: Wireframes diseñados estrictamente bajo criterios de Web Accessibility (contraste de color, jerarquía semántica).',
+      'Fundación accesible: Wireframes diseñados estrictamente bajo criterios de Web Accessibility.',
     ],
     image: {
       src: '/images/wireframe-mac.png',
@@ -161,7 +161,7 @@ export const projectData: CaseStudyProps = {
     delivered: [
       'Una plataforma web completamente responsiva.',
       'Un sistema de diseño documentado en Figma.',
-      'Código frontend implementado (Next.js/React) y optimizado para SEO y rendimiento.',
+      'Código frontend implementado y optimizado para SEO y rendimiento.',
     ],
     improvements: [
       'Visibilidad: Catálogo centralizado que mejora el SEO de los episodios a través de notas indexables.',
@@ -214,7 +214,7 @@ export const projectData: CaseStudyProps = {
       {
         title: 'El contenido es la verdadera interfaz',
         description:
-          'Aprendí que en plataformas impulsadas por creadores, el diseño debe dar un paso atrás y actuar únicamente como el escenario invisible que hace brillar al contenido (audio y texto).',
+          'Aprendí que en plataformas impulsadas por creadores, el diseño debe dar un paso atrás y actuar únicamente como el escenario invisible que hace brillar al contenido.',
       },
     ],
   },

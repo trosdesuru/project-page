@@ -15,10 +15,10 @@ export default function ProjectResearch({ data, className }: ResearchProps) {
         </h2>
       </div>
 
-      <div className="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-16">
+      <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-12 lg:gap-16">
         <div className="lg:col-span-5">
           {data.image && (
-            <figure className="sticky top-24 overflow-hidden">
+            <figure className="sticky top-1 overflow-hidden">
               <img
                 src={data.image.src}
                 alt={data.image.alt}

@@ -52,11 +52,11 @@ export default function CaseStudyHeader({
 
       <div className="lg:col-span-6">
         {image ? (
-          <div className="relative h-full w-full overflow-hidden">
+          <div className="relative w-full overflow-hidden rounded-lg">
             <img
               src={image.src}
               alt={image.alt}
-              className="absolute h-full w-full object-contain"
+              className="h-auto w-full object-contain"
             />
           </div>
         ) : null}
