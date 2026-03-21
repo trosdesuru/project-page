@@ -2,219 +2,195 @@ import { CaseStudyProps } from '@/lib/types';
 
 export const projectData: CaseStudyProps = {
   client: 'Al Borde del Burnout',
-  title: 'Diseñando un santuario digital para la salud mental',
+  title: 'Diseñando un santuario digital con Next.js',
   shortDescription:
-    'Diseño y desarrollo de la plataforma web oficial para el podcast "Al Borde del Burnout", creando un espacio accesible y libre de fricciones que centraliza el contenido, fomenta la comunidad y ofrece recursos para la gestión del estrés.',
+    'Estrategia UX y desarrollo Frontend (React/Next.js) para un ecosistema de salud mental. Implementé una arquitectura sin recargas de página que mantiene el estado global del reproductor de audio, garantizando fricción cero al usuario.',
   tags: [
-    'End-to-end UX/UI',
-    'Desarrollo Frontend',
+    'UX Engineering',
+    'Frontend (Next.js)',
+    'Global State Management',
     'Salud Digital',
-    'Estrategia de Producto',
   ],
 
   heroImage: {
     src: '/images/group-mac-iphone.png',
-    alt: 'Vista principal de la plataforma web Al Borde del Burnout',
+    alt: 'Plataforma web Al Borde del Burnout responsiva',
   },
 
   metadata: {
-    role: 'UX Engineer & Frontend Developer',
-    timeline: '2024',
-    platform: 'Responsive Web App',
-    team: 'UX | UI Designer, Frontend Dev, CEO',
+    role: 'UX Engineer (End-to-End)',
+    timeline: '2 meses - 2024',
+    platform: 'Web App (Next.js, TypeScript, Tailwind)',
+    team: 'Creador del Podcast, UX Engineer (Yo)',
     users:
-      'Profesionales, freelancers y personas interesadas en la salud mental, la gestión del estrés y la prevención del burnout.',
+      'Profesionales buscando recursos de gestión del estrés y prevención del burnout laboral.',
     constraints:
-      'Necesidad de un gestor de contenidos ágil para actualizar episodios, presupuesto ajustado, optimización técnica para SEO.',
+      'Necesidad de un Single Page Application (SPA) para reproducción de audio ininterrumpida, alto rendimiento SEO (Lighthouse >95) y presupuesto ajustado.',
   },
   introduction:
-    'Al Borde del Burnout es un podcast que aborda la salud mental a través de conversaciones honestas sobre la gestión del estrés y el agotamiento laboral. El proyecto necesitaba evolucionar de ser solo un canal de audio en plataformas de terceros a tener un hogar digital propio. Mi responsabilidad abarcó todo el ciclo del producto: desde traducir las necesidades de la comunidad en requisitos técnicos viables, hasta el diseño de la interfaz y su desarrollo frontend completo.',
+    '"Al Borde del Burnout" necesitaba evolucionar de un simple feed de Spotify a una plataforma propia. Mi rol fue ejecutar el proyecto de principio a fin (End-to-End): desde diseñar una UI que redujera la carga cognitiva, hasta programar la arquitectura en Next.js. El mayor logro técnico fue implementar un reproductor de audio persistente que acompaña al usuario mientras explora artículos, sin cortes ni recargas de página.',
 
   outcomes: {
     business: {
-      title: 'Centralización de audiencia',
+      title: 'Fidelización y propiedad de datos',
       description:
-        'Creación de un canal propio para fidelizar a la audiencia e impulsar la suscripción a la newsletter.',
+        'Redirección del tráfico de plataformas de terceros a un dominio propio, impulsando la captación directa de leads (newsletter).',
     },
     users: {
-      title: 'Reducción de esfuerzo cognitivo',
+      title: 'Consumo ininterrumpido',
       description:
-        'Navegación anti-burnout que facilita la búsqueda de recursos y aumenta el tiempo de permanencia.',
+        'Gracias a la gestión de estado global de React, los usuarios pueden leer show notes o buscar libros sin que el podcast se pause.',
     },
     team: {
-      title: 'Flujo de trabajo sin bloqueos',
+      title: 'Velocidad de entrega (Zero-Handoff)',
       description:
-        'Lanzamiento ágil al centralizar el diseño UX y la construcción técnica sin fricciones de handoff.',
+        'Al dominar tanto el diseño en Figma como el código, eliminé la fricción del handoff tradicional, lanzando el MVP en tiempo récord.',
     },
   },
 
   problem: {
-    subtitle: 'Construyendo un hogar más allá de plataformas de terceros',
+    subtitle: 'El reto: Escuchar y explorar al mismo tiempo',
     context: [
-      'El contenido de "Al Borde del Burnout" vivía disperso en plataformas como Spotify, iVoox o YouTube. No existía un punto de encuentro centralizado donde los oyentes pudieran profundizar en las temáticas, acceder de forma organizada a las notas de los programas, o conectar más estrechamente con la marca a través de la newsletter y recursos adicionales.',
+      'El contenido sobre salud mental requiere foco. Los usuarios de Spotify a menudo pierden los enlaces o libros mencionados durante el episodio. Crear una web tradicional basada en HTML/PHP significaba que, si el usuario hacía clic en un artículo mientras escuchaba, la página recargaría y el audio se cortaría, rompiendo la inmersión.',
     ],
     challenge:
-      'Diseñar y desarrollar desde cero una plataforma web que transmitiera calma y claridad, estructurando un catálogo creciente de episodios y recursos sin abrumar visualmente a un usuario que busca reducir su nivel de estrés.',
+      'Construir una arquitectura Frontend robusta que permitiera navegación asíncrona fluida, combinada con un diseño de interfaz que transmitiera calma absoluta y redujera el ruido visual.',
     successCriteria: [
-      'Lanzamiento de una arquitectura de información clara que permitiera categorizar y reproducir episodios directamente en la web.',
-      'Alcanzar una puntuación de accesibilidad web superior al 95% en Lighthouse.',
-      'Lograr una conversión fluida de visitantes a suscriptores de la newsletter.',
+      'Implementación de reproductor global persistente mediante React Context.',
+      'Rendimiento impecable: Puntuación de accesibilidad web y performance superior al 95% en Lighthouse.',
+      'Diseño responsivo optimizado para una audiencia 90% Mobile-first.',
     ],
     image: {
       src: '/images/spotify.png',
-      alt: 'Dispersión de plataformas vs plataforma centralizada',
+      alt: 'Dispersión de plataformas',
       caption:
-        'El reto: Unificar un ecosistema disperso en un solo santuario digital',
+        'Unificando el contenido de audio y texto mediante tecnología SPA moderna.',
     },
   },
 
   research: {
-    subtitle: 'Entendiendo la carga cognitiva de nuestra audiencia',
+    subtitle: 'Arquitectura y reducción de carga cognitiva',
     steps: [
       {
-        id: '00',
-        title: 'Objetivos de investigación',
-        items: [
-          'Comprender cómo consumen contenido digital las personas interesadas en el bienestar mental.',
-          'Definir la arquitectura óptima para que la web actúe como una herramienta de apoyo, no como una carga adicional.',
-        ],
-      },
-      {
         id: '01',
-        title: 'Revisión heurística y análisis competitivo',
+        title: 'Análisis de interacciones de estado persistente',
         items: [
-          'Auditoría de los canales actuales del podcast y análisis de otros creadores de contenido del sector de la salud mental.',
+          'Investigación de patrones de navegación en aplicaciones como Spotify Web o SoundCloud para replicar la persistencia del reproductor en Next.js.',
         ],
       },
       {
         id: '02',
-        title: 'Feedback de usuarios y mercado',
+        title: 'Mapeo de Rutas y SEO Dinámico',
         items: [
-          'Análisis del feedback de la audiencia en redes sociales para descubrir carencias como por ejemplo, la necesidad de enlaces rápidos a libros recomendados en los episodio).',
+          'Definición de rutas dinámicas [slug] para permitir indexación SEO de cada episodio individual sin perder los beneficios de una aplicación cliente.',
         ],
       },
       {
         id: '03',
-        title: 'Mapeo de la experiencia',
+        title: 'Diseño para la fatiga mental',
         items: [
-          'Mapeo del recorrido del oyente: desde que descubre un clip en redes sociales y escucha el audio, hasta que busca la web para suscribirse.',
-        ],
-      },
-      {
-        id: '04',
-        title: 'Definición y priorización',
-        items: [
-          'Priorización de un MVP centrado en 3 pilares: episodios accesibles, página "About" para humanizar el proyecto, y acceso directo a la comunidad.',
+          'Auditoría visual del sector de salud mental: descarte de animaciones agresivas o pop-ups, apostando por un diseño brutalista suave y mucho espacio en blanco.',
         ],
       },
     ],
     image: {
       src: '/images/research-square.png',
-      alt: 'Mapeo de experiencia de usuario',
+      alt: 'Arquitectura de rutas',
       caption:
-        'Mapeando el recorrido del oyente desde el descubrimiento hasta la fidelización',
+        'Mapeando la persistencia de componentes a través del routing de Next.js.',
     },
   },
 
   definition: {
-    subtitle:
-      'Acortando la brecha entre una UI calmada y requisitos técnicos robustos',
+    subtitle: 'Definiendo la base técnica del proyecto',
     context: [
-      'La transición de los wireframes a los requisitos técnicos fue directa; cada componente fue diseñado pensando en su inmediata implementación en Wordpress con HTML/CSS y algo de PHP, asegurando un desarrollo veloz y sin sorpresas tecnológicas.',
+      'La transición del concepto visual al código fue directa. Diseñé los componentes en Figma pensando estrictamente en su equivalencia en Tailwind CSS y TypeScript, garantizando que lo diseñado era 100% programable de forma nativa.',
     ],
     scope: [
-      'Navegación anti-burnout: Uso extensivo del espacio en blanco y reducción al mínimo de elementos distractores o pop-ups agresivos.',
-      'Reproductor integrado: Funcionalidad para escuchar episodios en la misma página mientras se leen las show notes.',
-      'Fundación accesible: Wireframes diseñados estrictamente bajo criterios de Web Accessibility.',
+      'Reproductor Global: Componente renderizado fuera del Layout principal para evitar desmontajes.',
+      'Tipado estricto (TypeScript): Asegurar que los datos de los episodios (título, URL del audio, metadata) fluyan sin errores desde el CMS.',
+      'Accesibilidad semántica: Uso correcto de etiquetas ARIA y contrastes verificados para lectores de pantalla.',
     ],
     image: {
       src: '/images/wireframe-mac.png',
-      alt: 'Wireframes y requisitos técnicos',
-      caption: 'Definiendo componentes escalables listos para React',
-    },
-    bottomImage: {
-      src: '/images/wireframe-mac.png',
-      alt: 'Detalle UI cuadrado',
+      alt: 'Wireframes técnicos y componentes',
+      caption: 'Traduciendo Wireframes directamente a Componentes de React funcionales.',
     },
   },
 
   iterativeProcess: {
-    subtitle: 'Diseñando para la accesibilidad y la resonancia emocional',
+    subtitle: 'Prototipado en código real',
     highFidelity: [
-      'Desarrollo de un sistema de diseño propio en Figma.',
-      'Selección de una paleta de colores y tipografías que evitasen la fatiga visual, transmitiendo la honestidad y transparencia que caracterizan al podcast.',
+      'En lugar de hacer infinitas iteraciones en Figma, pasé rápidamente a programar prototipos interactivos funcionales en el navegador.',
+      'Esto permitió probar la verdadera latencia de carga de los audios y ajustar el diseño de los "Loading States" y Skeleton loaders de React.',
     ],
     image: {
       src: '/images/frame-group.png',
-      alt: 'Prototipos de alta fidelidad del proyecto',
+      alt: 'Estados de carga de la interfaz',
       caption:
-        'Evolución visual: De wireframes a una interfaz que transmite calma',
+        'Ajustando la experiencia del usuario basándose en latencias de red reales.',
     },
     testing: [
-      'Pruebas de usabilidad focalizadas en dispositivos móviles, dado que la inmensa mayoría de la audiencia de podcasts navega desde sus smartphones.',
-      'Iteraciones en el prototipo para mejorar el tamaño de las áreas de interacción (botones, controles de audio) y asegurar una lectura cómoda.',
+      'Pruebas de rendimiento en dispositivos móviles de gama baja para asegurar que el parsing de JavaScript no penalizaba la batería ni calentaba el dispositivo.',
     ],
   },
 
   delivery: {
-    subtitle: 'Una base escalable lista para crecer',
+    subtitle: 'Despliegue y optimización',
     delivered: [
-      'Una plataforma web completamente responsiva.',
-      'Un sistema de diseño documentado en Figma.',
-      'Código frontend implementado y optimizado para SEO y rendimiento.',
+      'Aplicación web Full-Stack desplegada en Vercel, con CI/CD automatizado.',
+      'Código modular, tipado y documentado para facilitar futuras integraciones de bases de datos o pasarelas de pago.',
     ],
     improvements: [
-      'Visibilidad: Catálogo centralizado que mejora el SEO de los episodios a través de notas indexables.',
-      'Control de la audiencia: Independencia parcial de terceros al canalizar el tráfico hacia una newsletter propia.',
-      'Experiencia unificada: Los usuarios ya no saltan entre aplicaciones para encontrar libros o enlaces mencionados.',
+      'Conversión Directa: Componentes de suscripción a la newsletter incrustados sin fricción en el hilo de lectura.',
+      'Performance: Carga inicial casi instantánea gracias al pre-renderizado de páginas estáticas (SSG) de Next.js.',
     ],
     image: {
       src: '/images/design-system.png',
-      alt: 'design system image'
-    }
+      alt: 'Librería de Componentes en React',
+    },
   },
 
   detailedOutcomes: {
-    subtitle:
-      'Desbloqueando la independencia y un camino claro para el crecimiento',
+    subtitle: 'Un activo digital robusto e independiente',
     business: {
-      title: 'Un activo digital escalable',
+      title: 'Plataforma preparada para monetización',
       description:
-        'El proyecto cuenta ahora con una plataforma propia que permite la futura integración de áreas privadas, cursos o patrocinios de manera nativa y centralizada.',
+        'Al ser dueños del código y la infraestructura, el cliente puede ahora integrar contenido premium o comunidades privadas sin pagar comisiones a terceros.',
     },
     user: {
-      title: 'Un refugio digital sin fricciones',
+      title: 'Inmersión sin barreras',
       description:
-        'La comunidad dispone de un espacio seguro, diseñado específicamente para no sobreestimular, facilitando el acceso a la información crítica para su bienestar mental.',
+        'La comunidad disfruta de una experiencia fluida, donde el diseño pasa a un segundo plano para dejar brillar al contenido de valor.',
     },
     team: {
-      title: 'Eficiencia técnica desde el diseño',
+      title: 'Sinergia Diseño-Desarrollo',
       description:
-        'La dualidad técnica y de diseño permitió priorizar el backlog de forma realista. Las decisiones de producto se tomaron sabiendo el coste de implementación, evitando rediseños de última hora.',
+        'Demostración práctica de cómo un perfil UX Engineer reduce tiempos de desarrollo, elimina malentendidos técnicos y entrega productos con un acabado visual perfecto.',
     },
     image: {
       src: '/images/group-mac-iphone.png',
-      alt: 'hero image',
-    }
+      alt: 'Muestra final del proyecto',
+    },
   },
 
   learnings: {
-    subtitle: 'Lo que este proyecto perfeccionó en mi práctica',
+    subtitle: 'La ventaja competitiva del UX Engineer',
     items: [
       {
-        title: 'Diseño para accesibilidad extrema',
+        title: 'La arquitectura es diseño',
         description:
-          'Trabajar en prevención del estrés me obligó a ser aún más estricto con la carga cognitiva, recordando que el diseño no solo debe ser estético, sino funcionalmente pacífico.',
+          'Mantener el estado de la UI (como un reproductor de audio) es una decisión puramente de Experiencia de Usuario resuelta mediante la arquitectura de software.',
       },
       {
-        title: 'El ownership end-to-end acelera la entrega',
+        title: 'Prototipar en código evita mentiras',
         description:
-          'Estar a cargo tanto de la arquitectura UX como de las líneas de código frontend demostró que eliminar las barreras entre diseño e ingeniería es la vía más rápida para construir un MVP sólido.',
+          'Figma lo aguanta todo, pero el navegador web no. Trabajar el frontend real me permitió diseñar soluciones honestas respecto a los tiempos de carga y animaciones.',
       },
       {
-        title: 'El contenido es la verdadera interfaz',
+        title: 'Accesibilidad desde la base',
         description:
-          'Aprendí que en plataformas impulsadas por creadores, el diseño debe dar un paso atrás y actuar únicamente como el escenario invisible que hace brillar al contenido.',
+          'Aprendí que la accesibilidad no se añade al final con colores de contraste; se construye desde el minuto 1 utilizando código semántico y gestionando el foco del teclado en React.',
       },
     ],
   },
